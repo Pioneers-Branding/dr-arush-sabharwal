@@ -1,0 +1,79 @@
+#mobnav-btn {
+    display: none;
+    font-size: 20px;
+    font-weight: bold;
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(bottom, #4A4A4D 0%, #0A0A0A 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(bottom, #4A4A4D 0%, #0A0A0A 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(bottom, #4A4A4D 0%, #0A0A0A 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #4A4A4D), color-stop(1, #0A0A0A));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(bottom, #4A4A4D 0%, #0A0A0A 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to top, #4A4A4D 0%, #0A0A0A 100%);	/* only transition out, not in */    color: white;
+    padding: 10px;
+    cursor: pointer;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.mobnav-subarrow {
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    #mobnav-btn {
+        display: block;
+    }
+    .mobnav-subarrow {
+        display: block;
+        background-color: #0f3975;
+        opacity: .3;
+        border-bottom: 1px solid white;
+        border-top: 1px solid black;
+        height: 20px;
+        width: 30px;
+        background-position: top left!important;
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        -webkit-transition: all .1s ease-in-out;
+        -moz-transition: all .1s ease-in-out;
+        -ms-transition: all .1s ease-in-out;
+        -o-transition: all .1s ease-in-out;
+        transition: all .1s ease-in-out;
+    }
+    .sf-menu {
+        width: 100%!important;
+        display: none;
+    }
+    .sf-menu.xactive {
+        display: block!important;
+    }
+    .sf-menu li {
+        float: none!important;
+        display: block!important;
+        width: 100%!important;
+    }
+    .sf-menu li a {
+        float: none!important;
+    }
+    .sf-menu ul {
+        position:static!important;
+        display: none!important;
+    }
+    .xpopdrop ul {
+        display: block!important;
+    }
+}
